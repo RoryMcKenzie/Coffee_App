@@ -21,5 +21,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(activityBrewTimer);
             }
         });
+
+        ImageButton ratio_calculator = findViewById(R.id.ratio_calculator_button);
+        ratio_calculator.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent activityRatioCalculator = new Intent(MainActivity.this, ActivityRatioCalculator.class);
+                startActivity(activityRatioCalculator);
+            }
+        });
     }
 }
