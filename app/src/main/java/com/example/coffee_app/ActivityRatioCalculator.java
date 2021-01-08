@@ -1,6 +1,5 @@
 package com.example.coffee_app;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.EditText;
 
@@ -13,7 +12,7 @@ public class ActivityRatioCalculator extends AppCompatActivity {
         setContentView(R.layout.activity_ratio_calculator);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Ratio Calculator");
-        EditText ratioNumber = findViewById(R.id.ratioNumber);
+        EditText ratioNumber = findViewById(R.id.et_ratio);
         ratioNumber.setText("16");
     }
 }
