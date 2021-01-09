@@ -12,11 +12,10 @@
         android:layout_height="88dp"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="92dp"
-        android:height="71sp"
         android:ems="10"
-        android:inputType="number"
         android:textColor="@android:color/background_dark"
         android:textSize="52sp"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,5 +53,27 @@
         android:text="Water (g)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_ratio_coffee"
+        android:layout_width="109dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="249dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_ratio_water"
+        android:layout_width="112dp"
+        android:layout_height="127dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="252dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
