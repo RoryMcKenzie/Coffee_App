@@ -32,12 +32,12 @@ public class ActivityRatioCalculator extends AppCompatActivity {
         }
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-            if  (ratioCoffee.getText().length() != 0) {
-                int num = Integer.parseInt(s.toString());
+            if  (ratioCoffee.getText().length() != 0 && ratioCoffee.getText().charAt(ratioCoffee.getText().length() - 1) != '.') {
+                double num = Double.parseDouble(s.toString());
                 String temp = ratioNumber.getText().toString();
                 String temp2 = String.valueOf(num * Integer.parseInt(temp));
                 ratioWater.setText(temp2);
-            } else {
+            } else if (ratioCoffee.getText().length() == 0){
                 ratioWater.setText("");
             }
         }
